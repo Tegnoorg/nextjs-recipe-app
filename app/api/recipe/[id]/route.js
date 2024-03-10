@@ -5,8 +5,9 @@ import { NextResponse } from "next/server";
 export async function PUT(req, { params }) {
   const { id } = params;
   const { newRecipeName: recipeName, newIngredients: ingredients, newDescription: description } = await req.json();
+  const date = Date.now();
   await connectDB();
-  await Recipe.findByIdAndUpdate(id, { recipeName,ingredients, description });
+  await Recipe.findByIdAndUpdate(id, { recipeName,ingredients, description, date });
   return NextResponse.json({ message: "Recipe updated" }, { status: 200 });
 }
 
