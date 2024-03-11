@@ -24,7 +24,6 @@ export default function RecipeList() {
 
     return (
         <div>
-            <h1 className="text-3xl font-bold">Recipe List</h1>
             <p>List of Recipes</p>
             {isLoading ? (
                 <p>Loading...</p>

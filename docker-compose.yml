@@ -1,11 +1,8 @@
 version: '3.5'
 
 services:
-  app: 
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: tegnoorg-recipeapp
+  app:
+    image: tegnoorg/recipe-app:latest 
     ports:
      - '3000:3000'
     volumes:

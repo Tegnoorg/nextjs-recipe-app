@@ -46,7 +46,6 @@ export default function EditRecipeForm({ id , recipeName, ingredients, descripti
     }
   return (
     <>
-    <p>Fill the form below to update recipe</p>
         <form onSubmit={handleSubmit} className="py-4 mt-4 border-t flex flex-col gap-5">
             <div>
                 <label  htmlFor="recipeName">Recipe Name</label>

@@ -1,10 +1,9 @@
-"use client";
 
 import InfoRecipeForm from "@/app/components/RecipeInfo"
 
 const getRecipeById = async( id ) => {
     try {
-        const res = await fetch(`/api/recipe/${id}`, {
+        const res = await fetch(`http://localhost:3000/api/recipe/${id}`, {
             cache: "no-store",
         });
 

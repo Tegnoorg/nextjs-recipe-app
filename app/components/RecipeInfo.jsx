@@ -1,5 +1,4 @@
 "use client";
-
 import { useRouter } from "next/navigation";
 
 export default function InfoRecipeForm({ recipeName, ingredients, description, date }){
@@ -16,7 +15,6 @@ export default function InfoRecipeForm({ recipeName, ingredients, description, d
 
   return (
     <>
-    <p>Fill the form below to update recipe</p>
         <form onSubmit={handleSubmit} className="py-4 mt-4 border-t flex flex-col gap-5">
             <div>
                         <div className="bg-slate-100 rounded-md p-4 mb-4">
